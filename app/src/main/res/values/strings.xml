@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ContactProject</string>
+    <string name="addContact">+</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="annuler">Annuler</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="telephone">Téléphone</string>
+    <string name="prendre">Prendre une photo</string>
+    <string name="selectionner">Selectionner une photo</string>
+    <string name="this_is_the_profile_pic_of_the_contact">This is the profile pic of the contact</string>
+</resources>

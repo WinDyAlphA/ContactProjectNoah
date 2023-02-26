@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/annulerAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/annuler"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+/>
+        <View android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextEditNum"
+            android:src="@drawable/default_profile_pic"
+            android:contentDescription="@string/this_is_the_profile_pic_of_the_contact"
+            android:layout_weight="1" />
+
+        <View android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/enregistrerAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/enregistrer"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/TextEditNom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAddContact"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="@string/nom"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <EditText
+        android:id="@+id/TextEditPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/TextEditNom"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="@string/prenom"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <EditText
+        android:id="@+id/TextEditNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/TextEditPrenom"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="@string/telephone"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
