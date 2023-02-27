@@ -1,4 +1,13 @@
 package com.contactproject.pojo
 
-class MultipleRessources {
-}
+import com.google.gson.annotations.SerializedName
+
+
+data class MultipleResource (
+    var results: List<Pokemon>
+)
+
+data class Pokemon(
+    val name: String,
+    val url: String
+)

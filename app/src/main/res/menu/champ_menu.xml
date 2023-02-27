@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_date"
+        android:title="@string/ajouter_date_de_naissance"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sexe"
+        android:title="@string/ajouter_sexe"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_email"
+        android:title="@string/ajouter_mail"
+        app:showAsAction="never"/>
 </menu>

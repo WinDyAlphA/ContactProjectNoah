@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_homme"
+        android:title="@string/homme"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_femme"
+        android:title="@string/femme"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_autre"
+        android:title="@string/autre"
+        app:showAsAction="never"/>
 </menu>
