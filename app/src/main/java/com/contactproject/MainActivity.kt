@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val NewActivityRequestCode = 1
     private val contacts = ArrayList<Person>()
-    var apiInterface: APIInterface? = null
 
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,11 +47,12 @@ class MainActivity : AppCompatActivity() {
                     for (i in res!!.indices) {
                         val text = res[i].name
                         val url = res[i].url
-                        displayResponse += """${text.toString()} ${url.toString()}
+                        displayResponse += """${text} ${url}
     """
-                        Log.d("TAG", response.code().toString() + "")
-                        Log.d("TAG", "onResponse: $displayResponse")
+
                     }
+                    Log.d("TAG", response.code().toString() + "")
+                    Log.d("TAG", "onResponse: $displayResponse")
                     //displayResponse += """${text.toString()} ${url.toString()}
     //"""
 
@@ -80,6 +80,7 @@ class MainActivity : AppCompatActivity() {
                         break
                     }
                     i++
+
                 }
                 //afficher la lettre en haut de la listeview
                 binding.letter.text = alphabet[progress].toString().toUpperCase(Locale.ROOT)

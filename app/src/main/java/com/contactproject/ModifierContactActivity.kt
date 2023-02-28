@@ -48,7 +48,7 @@ class ModifierContactActivity : AppCompatActivity() {
 
         binding.textViewPrenomContact.setText(contact.lastName)
         binding.textViewNumContact.setText(contact.num)
-        if (contact.email  != "null"){
+        if (contact.email  != "null" && contact.email != "mail" && contact.email != "email"){
             binding.textViewEmailContact.setText(contact.email)
         }else{
             binding.textViewEmailContact.setText("")
