@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        //on cache la barre d'action
 
         val call: Call<MultipleResource?>? = client!!.create(APIInterface::class.java).doGetListResources()
         if (call != null) {
